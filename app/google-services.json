@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "869715898341",
+    "project_id": "homepilot-17a91",
+    "storage_bucket": "homepilot-17a91.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869715898341:android:f718cce8f187ab42d2890c",
+        "android_client_info": {
+          "package_name": "com.example.homepilot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhmtxelM-xiTxvChfVS_4Kc9rc3h-A2FU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
