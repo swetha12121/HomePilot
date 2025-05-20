@@ -67,7 +67,6 @@ class AuthViewModel : ViewModel() {
     }
 }
 
-// Updated AuthState with unique id for Error
 sealed class AuthState {
     object Authenticated : AuthState()
     object UnAuthenticated : AuthState()

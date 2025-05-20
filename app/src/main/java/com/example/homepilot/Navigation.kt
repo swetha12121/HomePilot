@@ -24,5 +24,33 @@ fun Navigation(modifier: Modifier = Modifier, authViewModel: AuthViewModel) {
       composable("home") {
          HomePage(modifier, navController, authViewModel)
       }
+      composable("scan") {
+         ObjectDetectionPage(modifier, navController,authViewModel)
+      }
+      composable("diy-ar-guide") {
+         ARDIYGuidePage(modifier, navController,authViewModel)
+      }
+      composable("video-support") {
+         VideoSupportPage(modifier, navController,authViewModel)
+      }
+      composable("booking") {
+         BookingPage(modifier, navController,authViewModel)
+      }
+      composable("payment") {
+         PaymentPage(modifier, navController,authViewModel)
+      }
+      composable("experts-map") {
+         ExpertsMapPage(modifier, navController,authViewModel)
+      }
+      composable("my-bookings") {
+         MyBookingsPage(modifier, navController,authViewModel)
+      }
+      composable("pro-profile/{id}") { backStackEntry ->
+         val proId = backStackEntry.arguments?.getString("id") ?: ""
+         ProProfilePage(modifier, navController, proId,authViewModel)
+      }
+      composable("settings") {
+         SettingsPage(modifier, navController,authViewModel)
+      }
    }
 }
