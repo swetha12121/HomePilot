@@ -6,9 +6,10 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.homepilot.pages.HomePage
 import com.example.homepilot.pages.LoginPage
 import com.example.homepilot.pages.SignupPage
+import com.example.homepilot.pages.ObjectDetectionPage
+import com.example.homepilot.ui.screens.HomePage
 
 @Composable
 fun Navigation(modifier: Modifier = Modifier, authViewModel: AuthViewModel) {
@@ -27,30 +28,7 @@ fun Navigation(modifier: Modifier = Modifier, authViewModel: AuthViewModel) {
       composable("scan") {
          ObjectDetectionPage(modifier, navController,authViewModel)
       }
-      composable("diy-ar-guide") {
-         ARDIYGuidePage(modifier, navController,authViewModel)
-      }
-      composable("video-support") {
-         VideoSupportPage(modifier, navController,authViewModel)
-      }
-      composable("booking") {
-         BookingPage(modifier, navController,authViewModel)
-      }
-      composable("payment") {
-         PaymentPage(modifier, navController,authViewModel)
-      }
-      composable("experts-map") {
-         ExpertsMapPage(modifier, navController,authViewModel)
-      }
-      composable("my-bookings") {
-         MyBookingsPage(modifier, navController,authViewModel)
-      }
-      composable("pro-profile/{id}") { backStackEntry ->
-         val proId = backStackEntry.arguments?.getString("id") ?: ""
-         ProProfilePage(modifier, navController, proId,authViewModel)
-      }
-      composable("settings") {
-         SettingsPage(modifier, navController,authViewModel)
-      }
+
    }
 }
+
